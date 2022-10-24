@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Display Change",
+        "price": "5000-20000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/mvgxJfS/3.png"
+    },
+    {
+        "id": 2,
+        "name": "Battery Exchange",
+        "price": "1000-5000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/WnrgBhW/1.png"
+    },
+    {
+        "id": 3,
+        "name": "Mobile Flashing ",
+        "price": "550",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/TBS8yKW/7.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Body Repair",
+        "price": "1500-15000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/1ZbnpbM/6.png"
+    },
+    {
+        "id": 5,
+        "name": "Speaker Repair",
+        "price": "100-1000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/JcHhpVC/2.png"
+    },
+    {
+        "id": 6,
+        "name": "Complete Analysis",
+        "price": "3000-20000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/yVDYQ9F/5.png"
+    }
+]
