@@ -60,21 +60,19 @@ const Footer = () => {
                 <div className="col social">
                     <h1>Social</h1>
                     <ul>
-                        <li><a href="#" class="fa fa-facebook"></a>
+                        <li><a href="https://www.facebook.com/shahrer.asif/" class="fa fa-facebook"></a>
                         </li>
-                          <li><a href="#" class="fa fa-twitter"></a></li>
+                          <li><a href="https://twitter.com/home" class="fa fa-twitter"></a></li>
                             
-                          <li><a href="#" class="fa fa-google"></a></li>
+                          <li><a href="https://www.google.com/" class="fa fa-google"></a></li>
                             
-                          <li><a href="#" class="fa fa-linkedin"></a></li>
+                          <li><a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a></li>
                             
-                          <li><a href="#" class="fa fa-youtube"></a></li>
+                          <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
                             
-                          <li><a href="#" class="fa fa-instagram"></a></li>
+                          <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
                             
-                        {/* <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
-            <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-            <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li> */}
+
                     </ul>
                 </div>
                 <div className="clearfix"></div>

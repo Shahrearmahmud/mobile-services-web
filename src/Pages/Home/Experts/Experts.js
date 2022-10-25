@@ -22,7 +22,7 @@ const experts = [
 ]
 const Experts = () => {
     return (
-        <div className='container'>
+        <div id="experts" className='container'>
             <h2 className='text-white text-center mt-5'>Our experts</h2>
             <div className="div row">
                 {

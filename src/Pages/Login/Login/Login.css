@@ -1,0 +1,8 @@
+.hover{
+ color: rgb(168, 168, 216);
+}
+
+.hover:hover{
+    color: blue;
+    cursor: pointer;
+}
