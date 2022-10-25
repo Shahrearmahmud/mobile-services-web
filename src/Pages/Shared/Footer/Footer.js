@@ -3,12 +3,84 @@ import './Footer.css'
 
 
 const Footer = () => {
-    const today = new Date();
-    const year = today.getFullYear();
+
     return (
-        <footer className='text-center bg-dark text-white p-3'>
-            <h5 ><small>All credit goes to Shahrear Mahmud (Copyright © {year})</small></h5>
-        </footer>
+
+        <div className="footer">
+            <div className="contain">
+                <div className="col">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Mission</li>
+                        <li>Services</li>
+                        <li>Social</li>
+                        <li>Get in touch</li>
+                    </ul>
+                </div>
+                <div className="col">
+                    <h1>Products</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Mission</li>
+                        <li>Services</li>
+                        <li>Social</li>
+                        <li>Get in touch</li>
+                    </ul>
+                </div>
+                <div className="col">
+                    <h1>Accounts</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Mission</li>
+                        <li>Services</li>
+                        <li>Social</li>
+                        <li>Get in touch</li>
+                    </ul>
+                </div>
+                <div className="col">
+                    <h1>Resources</h1>
+                    <ul>
+                        <li>Webmail</li>
+                        <li>Redeem code</li>
+                        <li>WHOIS lookup</li>
+                        <li>Site map</li>
+                        <li>Web templates</li>
+                        <li>Email templates</li>
+                    </ul>
+                </div>
+                <div className="col">
+                    <h1>Support</h1>
+                    <ul>
+                        <li>Contact us</li>
+                        <li>Web chat</li>
+                        <li>Open ticket</li>
+                    </ul>
+                </div>
+                <div className="col social">
+                    <h1>Social</h1>
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook"></a>
+                        </li>
+                          <li><a href="#" class="fa fa-twitter"></a></li>
+                            
+                          <li><a href="#" class="fa fa-google"></a></li>
+                            
+                          <li><a href="#" class="fa fa-linkedin"></a></li>
+                            
+                          <li><a href="#" class="fa fa-youtube"></a></li>
+                            
+                          <li><a href="#" class="fa fa-instagram"></a></li>
+                            
+                        {/* <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+            <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+            <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li> */}
+                    </ul>
+                </div>
+                <div className="clearfix"></div>
+            </div>
+        </div>
+
     );
 };
 
