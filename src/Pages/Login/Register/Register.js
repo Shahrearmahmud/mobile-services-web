@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword, } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile, } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
+import { async } from '@firebase/util';
+import Loading from '../../Shared/Loading/Loading';
 
 
 const Register = () => {
@@ -11,29 +14,39 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification: true});
+      const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const nameRef = useRef('')
     const emailRef = useRef('');
     const passwordRef = useRef('');
+    const checkedRef = useRef('');
     const navigate = useNavigate();
 
-    const handleRegister = event => {
+    if (loading || updating) {
+        return <Loading></Loading>
+    }
+
+    const handleRegister = async(event) => {
         event.preventDefault();
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        console.log(name,email,password)
+        const checked = checkedRef.current.checked;
+        
+           await createUserWithEmailAndPassword(email,password,checked);
+           await updateProfile({ displayName: name });
+          console.log('Updated profile');
+          navigate('/home');
+        
 
-        createUserWithEmailAndPassword(email,password);
+       
 
     }
     const navigateRegister = () => {
         navigate('/login');
     }
 
-    if(user){
-        navigate('/home')
-    }
+    
     return (
         <div className=' container mx-auto my-5 bg-white p-5 rounded '>
             <h2 >Please Register</h2>
@@ -60,13 +73,14 @@ const Register = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
+                    <Form.Check ref={checkedRef} className='text-dark' type="checkbox" label="Accept EasyTech Terms and conditions" required />
                 </Form.Group>
-                <Button variant="dark" type="submit">
+                <Button variant="dark w-50 mx-auto d-block mb-2" type="submit">
                     Register
                 </Button>
             </Form>
             <p className='my-3 '>Already have an account ? <span className='hover' onClick={navigateRegister} hover >Login</span> </p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
