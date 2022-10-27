@@ -13,9 +13,9 @@ const experts = [
 
     { id: 1, name: 'Mike Rana', img: ex1 },
     { id: 2, name: 'jacky Mia', img: ex2 },
-    { id: 3, name: 'Lamessa', img: ex3 },
+    { id: 3, name: 'Lameesa', img: ex3 },
     { id: 4, name: 'John Robin', img: ex4 },
-    { id: 5, name: 'Samiha', img: ex5 },
+    { id: 5, name: 'Samiha lebu', img: ex5 },
     { id: 4, name: 'Aysha', img: ex6 },
     
    
